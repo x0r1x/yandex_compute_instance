@@ -14,7 +14,7 @@ locals {
   }
 }
 
-
+#!
 
 
 data "yandex_compute_image" "my_image" {
