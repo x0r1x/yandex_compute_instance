@@ -4,6 +4,7 @@ module "test-vm" {
   network_id     = yandex_vpc_network.develop.id
   subnet_zones   = ["ru-central1-a","ru-central1-b"]
   subnet_ids     = [yandex_vpc_subnet.develop_a.id,yandex_vpc_subnet.develop_b.id]
+  security_group_ids = []
   instance_name  = "webs"
   instance_count = 2
   image_family   = "ubuntu-2004-lts"
